@@ -2,7 +2,7 @@
 
 function sendInformasi($to,$data){
 
-	$apiKey='AAAAsuJtkt4:APA91bGqZaPT2QaI_qg_1WvHbzvqXRIIykWDoaI0pMH2mMcRtNUNhSgMCyHQuFiS_X-YEzmQkYwfNNjB9GxH-KvIeG_xejdqWlfxLfgO1sjEbXyQIopeuV8LOuiRkMmiDXbm9seMu-HD';
+	$apiKey='<API KEY>';
 	$field= array('to'=>$to,'notification'=>$data);
 
 	$header = array('Authorization:key='.$apiKey,'Content-Type:application/json');
@@ -28,7 +28,7 @@ function sendInformasi($to,$data){
 
 
 $data = array('body' =>'Jangan Lupa Stock Opname ya');
-$target = 'dQjor317u8I:APA91bHxrzPVZ9zMuX3Q2tPxfvrRGqVuVz1PpyvDyUm97_J7BDa6mXjTZUMuncteO05NmQqU1M8B0kh-GM1cfeh3ccLgLhISM4nl3tEXGAAtb9pcczC5iyCxPIa7LiHhVhABAGu0EB7h';
+$target = '<TARGET>';
 
 
 print_r(sendInformasi($target,$data));
